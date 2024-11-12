@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Caramelo Labs é um site com projetos divertidos e úteis inspirados no Cachorro Caramelo. Explore o gerador de senhas e o Todo List!">
+  <meta name="author" content="Caramelo Labs">
+  <title>Caramelo Labs</title>
+
+  <!-- Fonte do Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* Paleta de cores inspirada no Cachorro Caramelo */
+    :root {
+      --caramelo-primary: #d5a253;
+      --caramelo-secondary: #f1c78a;
+      --caramelo-dark: #a07645;
+      --caramelo-light: #ffedd5;
+      --caramelo-accent: #eac17c;
+      --background-color: #fffaf0;
+      --text-color: #4b3f30;
+      --border-color: #e1b079;
+      --button-color: #c48850;
+      --button-hover: #b3763d;
+    }
+
+    /* Reset e estilos globais */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--background-color);
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      font-family: 'Roboto', sans-serif;
+      color: var(--caramelo-primary);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      background-color: var(--caramelo-light);
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      padding: 10px 0;
+    }
+
+    .project-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    .project-list li {
+      background-color: var(--caramelo-light);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      margin: 10px 0;
+      padding: 20px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .project-list li:hover {
+      transform: scale(1.02);
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      color: var(--caramelo-dark);
+      font-weight: 600;
+    }
+
+    .project-description {
+      color: var(--text-color);
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: var(--button-color);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: var(--button-hover);
+    }
+
+    .img {
+      height: 500px;
+      width: 100%;
+      background-image: url("perfil.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 2%;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: var(--caramelo-dark);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+      border-radius: 8px;
+    }
+
+    footer p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Caramelo Labs</h1>
+    </header>
+
+    <p>Bem-vindo ao Caramelo Labs, onde você encontra projetos divertidos e úteis inspirados no Cachorro Caramelo!</p>
+
+    <div class="img"></div>
+    <ul class="project-list">
+      <li>
+        <div class="project-title">Gerador de Senha Caramelo</div>
+        <div class="project-description">
+          Crie senhas seguras e divertidas com o tema Cachorro Caramelo, incluindo frases fáceis de lembrar.
+        </div>
+        <a href="https://gerasenha.caramelolabs.com/" class="button">Explorar Projeto</a>
+      </li>
+      <li>
+        <div class="project-title">Todo List Caramelo</div>
+        <div class="project-description">
+          Organize suas tarefas diárias com um toque do Cachorro Caramelo.
+        </div>
+        <a href="#" class="button">Explorar Projeto</a>
+      </li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Caramelo Labs. Todos os direitos reservados.</p>
+    <p><a href="mailto:oxfogaka@gmail.com">Contato</a></p>
+  </footer>
+</body>
+</html>
